@@ -5,144 +5,150 @@
     <title>Friend Finder</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Link static CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div>
-        <h1>Survey</h1>
-        <p>Take a quick survey to find your perfect match! If you disagree with the statement, select 1. Else, select 5.</p>
-        <form>
+        <h1 class="homebody" id="mainheader">Survey</h1>
+    <div class="container">
+        
+        <p>Take a quick survey to find your perfect match!</p>
+        <form class="questions">
             <div>
                 <input id="name" type="text" placeholder="Name (Required)">
             </div>
             <div>
                 <input id="photo" type="text" placeholder="Link to Profile Photo (Required)">
             </div>
-            <div>
-                <label for="question1">My favorite drummer is Roger Taylor.</label>
-                <select id="question1">
-                    <option value="empty"></option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-            </div>
-            <div>
-                <label for="question2">I love to travel.</label>
-                <select id="question2">
-                    <option value="empty"></option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-            </div>
-            <div>
-                <label for="question3">If I have an idea, I follow it up.</label>
-                <select id="question3">
-                    <option value="empty"></option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-            </div>
-            <div>
-                <label for="question4">Art is a relaxing past time.</label>
-                <select id="question4">
-                    <option value="empty"></option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-            </div>
-            <div>
-                <label for="question5">Life, uh, finds a way.</label>
-                <select id="question5">
-                    <option value="empty"></option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-            </div>
-            <div>
-                <label for="question6">I keep my home clean.</label>
-                <select id="question6">
-                    <option value="empty"></option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-            </div>
-            <div>
-                <label for="question7">Perfumes give me headaches.</label>
-                <select id="question7">
-                    <option value="empty"></option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-            </div>
-            <div>
-                <label for="question8">I can play a musical instrument.</label>
-                <select id="question8">
-                    <option value="empty"></option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-            </div>
-            <div>
-                <label for="question9">I am bilingual.</label>
-                <select id="question9">
-                    <option value="empty"></option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-            </div>
-            <div>
-                <label for="question10">I like comic book movies.</label>
-                <select id="question10">
-                    <option value="empty"></option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-            </div>
-        </form>
-        <div>
-            <button id="submitBtn" type="submit">Submit</button>
-        </div>
 
-        <div role="dialog">
+            <h3><strong>Question 1</strong></h3>
+            <h4>Gas is getting relatively cheaper.</h4>
+            <select id="question1">
+                <option value="empty"></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+
+            <h3><strong>Question 2</strong></h3>
+            <h4>I love to travel.</h4>
+            <select id="question2">
+                <option value="empty"></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <h3><strong>Question 3</strong></h3>
+            <h4>If I have an idea, I follow it up.</h4>
+            <select id="question3">
+                <option value="empty"></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <h3><strong>Question 4</strong></h3>
+            <h4>Art is a relaxing past time.</h4>
+            <select id="question4">
+                <option value="empty"></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <h3><strong>Question 5</strong></h3>
+            <h4>It's more fulfilling to attend concerts in person.</h4>
+            <select id="question5">
+                <option value="empty"></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <h3><strong>Question 6</strong></h3>
+            <h4>I keep my home clean.</h4>
+            <select id="question6">
+                <option value="empty"></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <h3><strong>Question 7</strong></h3>
+            <h4>Perfumes give me headaches.</h4>
+            <select id="question7">
+                <option value="empty"></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <h3><strong>Question 8</strong></h3>
+            <h4>I can play a musical instrument.</h4>
+            <select id="question8">
+                <option value="empty"></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <h3><strong>Question 9</strong></h3>
+            <h4>I am bilingual.</h4>
+            <select id="question9">
+                <option value="empty"></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <h3><strong>Question 10</strong></h3>
+            <h4>I like comic book movies.</h4>
+            <select id="question10">
+                <option value="empty"></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+    </div>
+    </form>
+    <div>
+        <button id="submitBtn" type="submit">Submit</button>
+    </div>
+
+    <div role="dialog">
+        <div>
             <div>
                 <div>
-                    <div>
-                        <h3>Your New Best Friend</h1>
-                    </div>
+                    <h3><strong></strong>Your New Best Friend</h1>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
     <footer>
