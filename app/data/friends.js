@@ -1,4 +1,4 @@
-var friendsList = [
+var friends = [
     {
         name: "Grant",
         photo: "https://static.tvtropes.org/pmwiki/pub/images/ward_grant_douglas.jpg",
@@ -22,4 +22,4 @@ var friendsList = [
 ];
 
 
-module.exports = friendsList;
+module.exports = friends;
