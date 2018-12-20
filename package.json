@@ -1,0 +1,26 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "Created with Node.js and Express and deployed to Heroku, the application user must answer 10 questions on a scale of 1 to 5. After filling out the required parameters, you will be matched with a new friend.",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericremoroza/FriendFinder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ericremoroza/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/ericremoroza/FriendFinder#readme"
+}
